@@ -497,7 +497,7 @@ const T=setInterval(()=>{n++;const q=B?n%6:SEQ[n%4];im.src=fr[q];const r=im.getB
 const p=document.createElement('i');p.className='sps';p.textContent=Math.random()<.5?'✦':'✧';p.style.cssText='left:'+(r.left-s.left+r.width*tp[0]+Math.random()*8)+'px;top:'+(r.top-s.top+r.height*tp[1])+'px;font-size:'+(10+Math.random()*10)+'px';fl.append(p);setTimeout(()=>p.remove(),900);
 if(!B&&n%4==0){const t=document.createElement('img');t.className='pt';t.src=AS.sk[k];t.style.cssText='left:'+(r.left-s.left-30)+'px;top:'+(r.top-s.top+r.height*.35)+'px';fl.append(t);setTimeout(()=>t.remove(),5000)}},150);
 d.animate([{transform:'translateX(-25vw)'},{transform:'translateX(112vw)'}],{duration:B?20000:26000,easing:'linear'}).onfinish=()=>{clearInterval(T);d.remove()}},delay)}
-function skyRun(){if(document.body.dataset.pg!='sky')return;if(!window.BF){BF=1;fly('b',0,72);setTimeout(()=>BF=0,21000)}if(['dawn','dusk','golden'].includes(PH())){fly(0,3000,6);fly(1,9000,82);fly(2,15000,13)}}
+function skyRun(){if(document.body.dataset.pg!='sky')return;if(!window.BF){BF=1;fly('b',0,72);setTimeout(()=>BF=0,21000)}{fly(0,3000,6);fly(1,9000,82);fly(2,15000,13)}}
 setTimeout(skyRun,1200);setInterval(skyRun,40000);addEventListener('hashchange',()=>{if(['','#sky'].includes(location.hash))setTimeout(skyRun,700)});
 const rS=render;render=function(){rS();sky.style.backgroundImage=PH()=='night'?'url('+AS.ns+')':SKY0;const o=document.querySelector('[data-h="polar"] .tip');if(o)o.textContent='Vision board'};
 // ---- vision board
